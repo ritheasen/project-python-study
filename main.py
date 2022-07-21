@@ -1,16 +1,8 @@
-# This is a sample Python script.
+def finding_an_element_in_array(arr, numtosearch):
+    for i in range (0, len(arr)):
+        if arr[i] == numtosearch:
+            return  f"Element found at index {i}"
+    return  "Element not found in the array..."
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+result = finding_an_element_in_array([54,45,78,98,56], 78)
+print(result)
