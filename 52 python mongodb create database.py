@@ -43,9 +43,10 @@ record3 = [{
             "sex":"M",
             "age":17  
             }
-
 ]
 #method to insert
+#newCollection.insert_one(record)
+#newCollection.insert_many([record1,record2])
 newCollection.insert_many(record3)
 #newCollection.insert_many([record1,record2,record3])
 

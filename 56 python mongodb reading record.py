@@ -15,8 +15,7 @@ for recordd in cursor:
     print(recordd)
 
 
-#for recordd in cursor:
-#print(f"asd{cursor[0]}{cursor[1]}{cursor[2]}{cursor[3]}")
+
 
 
 

@@ -5,11 +5,13 @@ newDB = client["firsttest"] #if it doesnt exist it will create new db#can use .<
 
 newCollection = newDB.testing #creating collection .<name> inside db
 
-#create record to insert in collection
 
 
-newUpdate = newCollection.delete_one({"id": 5})
+newDelete = newCollection.delete_one({"id": 1})
+
 #newUpdate = newCollection.delete_many({}) #delete all record
+
+newDelete = newCollection.delete_many({"sex": "F"})
 
 
 

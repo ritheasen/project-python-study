@@ -7,20 +7,20 @@ connection = mysql.connector.connect(
     password = "ritheasen@root15032003",
     database = "kit"
 
-
 )
 
 cursor = connection.cursor()
 
-sid = int(input("Input the sid of the record to be found:"))
+#sid = int(input("Input the sid of the record to be found:"))
 
-cursor.execute(f"SELECT * FROM dse10 WHERE sid = {sid}")
+#cursor.execute(f"SELECT * FROM dse10 WHERE sid = {sid}")
+cursor.execute(f"SELECT * FROM dse10" )
 
 students = cursor.fetchall()
 
-
 for student in students:
-    print(f"sid: {student[0]},sname: '{student[1]}',sage: {student[2]}")
+    print(student)
+    #print(f"sid: {student[0]},sname: '{student[1]}',sage: {student[2]}")
 
 
 
